@@ -57,7 +57,7 @@ Once launched, the Jupyter icon should appear on the front page, you can click o
 
 9) Root
 
-   1) **RECOMMENDED FOR JUPYTER** If you have conda installed follow the procedure here:
+    **RECOMMENDED FOR JUPYTER** If you have conda installed follow the procedure here:
     
     https://root.cern/install/#conda
 
