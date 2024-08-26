@@ -9,7 +9,12 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
 
 ## 3) pip/conda
 
-3.1) Installare pip:
+3.1) Install pip:
+1) Open Terminal from Applications > Utilities. 
+2) Type: python -m ensurepip or python3 -m ensurepip
+3) Press Return.
+4) If pip isn’t already installed, Ensurepip will install it.
+5) If you want to upgrade pip instead of installing it from scratch, add upgrade to the end of the command in step 2.
     
-    sudo apt-get install pip
+    python3 -m ensurepip
 
