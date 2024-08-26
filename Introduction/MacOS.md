@@ -21,13 +21,13 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
 3.2) Install Anaconda: 
 1)    go on the site: https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
 2) select https://www.anaconda.com/download/ to dowload Anaconda, register and you'll get a link by email:
-   <img width="1464" alt="image" src="https://github.com/user-attachments/assets/201ab284-0b61-4540-8778-25b5045415a1">
+   <img width="366" alt="image" src="https://github.com/user-attachments/assets/201ab284-0b61-4540-8778-25b5045415a1">
    
 3) Create an account
    
-    <img width="710" alt="image" src="https://github.com/user-attachments/assets/28b11169-01d3-4aae-8202-2f59145cf7b7">
+    <img width="355" alt="image" src="https://github.com/user-attachments/assets/28b11169-01d3-4aae-8202-2f59145cf7b7">
     
-    <img width="685" alt="image" src="https://github.com/user-attachments/assets/29b7e256-7004-4794-8daa-0136213c77e8">
+    <img width="342" alt="image" src="https://github.com/user-attachments/assets/29b7e256-7004-4794-8daa-0136213c77e8">
     
 5) Install the downloaded file by double-clicking the .pkg file.
    
