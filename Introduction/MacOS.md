@@ -18,3 +18,16 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
     
     python3 -m ensurepip
 
+3.2) Install Anaconda: 
+1)    go on the site: https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
+2) select https://www.anaconda.com/download/ to dowload Anaconda, register and you'll get a link by email:
+   <img width="1464" alt="image" src="https://github.com/user-attachments/assets/201ab284-0b61-4540-8778-25b5045415a1">
+3) Create an account:
+    <img width="1420" alt="image" src="https://github.com/user-attachments/assets/28b11169-01d3-4aae-8202-2f59145cf7b7">
+    <img width="1370" alt="image" src="https://github.com/user-attachments/assets/29b7e256-7004-4794-8daa-0136213c77e8">
+4) Install the downloaded file
+    <img width="616" alt="image" src="https://github.com/user-attachments/assets/99c972c1-b5dd-475d-ae0f-929db052d4fd">
+5)
+
+
+
