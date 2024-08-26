@@ -27,7 +27,8 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
     <img width="1370" alt="image" src="https://github.com/user-attachments/assets/29b7e256-7004-4794-8daa-0136213c77e8">
 4) Install the downloaded file
     <img width="616" alt="image" src="https://github.com/user-attachments/assets/99c972c1-b5dd-475d-ae0f-929db052d4fd">
-5)
+5) To verify your installation, in your terminal window, run the command conda list. A list of installed packages appears if it has been installed correctly:
+   conda list
 
 
 
