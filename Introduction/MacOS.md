@@ -70,7 +70,11 @@ Once launched, the Jupyter icon should appear on the front page, you can click o
     Please note: conda here will create a new environment for root to function in, this is the way it is suggested to do it. The default environment is "base". 
     If you want to run ROOT you will always have to
     
-        conda activate rootenv
+        conda activate <my-environment>
+    
+    To leave the environment:
+
+        conda deactivate
 
     Follow the instructions found here:
 
