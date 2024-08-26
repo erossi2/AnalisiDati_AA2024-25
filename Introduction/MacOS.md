@@ -37,5 +37,42 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
    
    conda list
 
+7) Installing git
+   (Already installed in macOS check with)
 
+    git --version
+
+8) jupyter
+   To launch it, from the terminal (recommended) do:
+    
+    jupyter-notebook
+    
+It should start in the basic browser, otherwise copy the link to the local server that generates notebooks to a browser of your choice.
+
+You can also run Anaconda navigator from the command line:
+
+    anaconda navigator
+
+Once launched, the Jupyter icon should appear on the front page, you can click on the icon and install or update it.
+
+9) Root
+
+   1) **RECOMMENDED FOR JUPYTER** If you have conda installed follow the procedure here:
+    
+    https://root.cern/install/#conda
+
+    For any Linux distribution and MacOS, ROOT is available as a conda package. To create a new conda environment containing ROOT and activate it, execute
+
+    conda config --set channel_priority strict
+    conda create -c conda-forge --name <my-environment> root
+    conda activate <my-environment>
+
+    Please note: conda here will create a new environment for root to function in, this is the way it is suggested to do it. The default environment is "base". 
+    If you want to run ROOT you will always have to
+    
+        conda activate rootenv
+
+    Follow the instructions found here:
+
+    https://root.cern/install
 
