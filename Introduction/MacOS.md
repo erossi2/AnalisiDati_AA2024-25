@@ -29,7 +29,7 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
     
     <img width="685" alt="image" src="https://github.com/user-attachments/assets/29b7e256-7004-4794-8daa-0136213c77e8">
     
-5) Install the downloaded file
+5) Install the downloaded file by double-clicking the .pkg file.
    
     <img width="308" alt="image" src="https://github.com/user-attachments/assets/99c972c1-b5dd-475d-ae0f-929db052d4fd">
     
