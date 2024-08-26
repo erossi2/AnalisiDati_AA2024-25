@@ -6,5 +6,5 @@ Welcome to the DASP course tutorials page!
 The page will be modified and evolve as we progress with the lectures.
 It will be divided into the following sections:
 
-Introduction: instructions for installing the main components for work: git, python, pip, jupyter, root
-Basic computer science concepts: filesystem, terminal, compiled and interpreted programming languages.
+1) Introduction: instructions for installing the main components for work: git, python, pip, jupyter, root
+2) Basic computer science concepts: filesystem, terminal, compiled and interpreted programming languages.
