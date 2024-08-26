@@ -27,5 +27,5 @@ more shellexercise.sh. Now I will run the command: so you can see the output"
 echo "--------------------------"
 more shellexercise.sh
 echo "--------------------------"
-echo "More useful information can be found in https://www.coursera.org/articles/how-to-learn-linux"
+echo "More useful information can be found in https://www.coursera.org/articles/how-to-learn-linux (you can join it for free)"
 #
