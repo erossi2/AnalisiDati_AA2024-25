@@ -102,7 +102,7 @@ Per lanciarlo, da terminale (consigliato) fate:
     
     jupyter-notebook
     
-Dovrebbe partire nel browser di base, altrimenti copiate il link al server locale che genera notebook su un browser di vostra scelta.
+Dovrebbe partire nel browser di base, altrimenti copiate il link al server locale che genera notebook su un browser di vostra scelta. Oppure seguite le istruzioni al link: https://jupyter.org/install
 
 Potete anche lanciare Anaconda navigator da linea di comando:
 
