@@ -48,4 +48,5 @@ print(x.e)
 print(x.p4)
 # mi faccio stampare a schermo l'uscita del metodo particle_info()
 print(x.particle_info())
-#
+# Un modo alternativo per avere lo stesso risultato 
+print(particle(7,7,8,9).particle_info())
