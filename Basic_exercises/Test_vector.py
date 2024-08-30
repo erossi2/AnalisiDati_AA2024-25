@@ -1,3 +1,4 @@
+#In case it doesn't work you have to install vector: pip install vector
 print("Hello World!")
 
 print("That was easy, right? Now let's load some libraries! ")
