@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/11EFYzV83dAZSj64FwRVdPbVvelKFhhFj
 """
 
-#usiamo scipy.stats per le definizioni di distribuzione esponenziale e binomiale:
+#usiamo scipy.stats per le definizioni di distribuzione esponenziale e binomiale (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html & https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html) :
 from scipy.stats import poisson,binom,expon
 #importiamo matplotlib e math:
 import matplotlib.pyplot as plt
@@ -37,14 +37,17 @@ print(" il rate di muoni in "+str(hours)+" ore è: "+str(muon_rate))
 e1 = expon(scale=50,loc=10) #nota bene: in realtà dovremmo definirla solo al di sopra di 10 GeV, teniamo questa come prima approssimazione
 #(1/scale)*  e-((x-loc)/scale) --> scale è l'equivalente di 'tau', la vita media, loc è il punto di partenza
 
-#generiamo ad esempio il numero di muoni cosmici previsto sopra:
+#generiamo ad esempio il numero di muoni cosmici previsto sopra (rvs-Random variates: rvs(loc=0, scale=1, size=1, random_state=None) ):
 energies = e1.rvs(size=int(muon_rate))
 print(energies)
 
 len(energies)
 
 fig,ax= plt.subplots()
+#properties of histos: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
 ax.hist(energies, density=True, bins='auto', histtype='stepfilled', alpha=0.2)
+ax.set_xlabel('Energy [GeV]')
+ax.set_ylabel('CR - Flux')
 #plt.show()
 
 import numpy as np
@@ -53,11 +56,14 @@ ndatasets=10000
 
 print("Il numero di conteggi atteso e' pari a ",int(muon_rate))
 #x= np.arange(muon_prob.ppf(0.01),muon_prob.ppf(0.99))
+#Percent point function (inverse of cdf — percentiles): ppf
 x= np.arange(muon_prob.ppf(1.0/ndatasets),muon_prob.ppf(1-1.0/ndatasets))
+#Probability mass function: pmf
 y=muon_prob.pmf(x)
 fig2, axs = plt.subplots()
 axs.plot(x,y)
 
+# Cumulative distribution function: cdf
 y = poisson.cdf(x, muon_rate, 0)
 plt.plot(x, y)
 plt.show()
