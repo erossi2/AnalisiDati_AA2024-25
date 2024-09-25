@@ -84,3 +84,7 @@ Once launched, the Jupyter icon should appear on the front page, you can click o
 Install Scipy:
 
     conda install scipy
+
+Or using brew:
+
+    brew install scipy
