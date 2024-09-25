@@ -80,3 +80,7 @@ Once launched, the Jupyter icon should appear on the front page, you can click o
 
     https://root.cern/install
 
+## 6) Scipy
+Install Scipy:
+
+    conda install scipy
