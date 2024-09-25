@@ -88,3 +88,8 @@ Install Scipy:
 Or using brew:
 
     brew install scipy
+
+## 7) matplotlib   
+Install matplotlib:
+
+    conda install -c conda-forge matplotlib    
