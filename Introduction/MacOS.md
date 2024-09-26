@@ -1,4 +1,4 @@
-## 1) Python3
+## 1) Python3 & matplotlib
 
 Richiede macOS 11.0 o versioni successive e un Mac con chip Apple M1 o versioni successive.
 Con le versioni di macOS recenti, python3 è automaticamente installato. 
