@@ -6,6 +6,7 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
 
 <img width="352" alt="image" src="https://github.com/user-attachments/assets/84b75873-ed4c-488d-99f3-0286dedc22af">
 
+    python3 -m pip install matplotlib
 
 ## 2) pip/conda
 
