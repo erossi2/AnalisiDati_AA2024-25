@@ -6,7 +6,13 @@ Per vedere la versione di python usare i comandi python3 --version o python --ve
 
 <img width="352" alt="image" src="https://github.com/user-attachments/assets/84b75873-ed4c-488d-99f3-0286dedc22af">
 
+Aggiungere matplotlib:
     python3 -m pip install matplotlib
+
+Aggiungere vector (utile per qualche esercizio proposto):
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install vector
 
 ## 2) pip/conda
 
