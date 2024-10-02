@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+#Generating normally distributed data for Higgs boson mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
