@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-#Generating normally distributed data for Height of Men
+#Generating normally distributed data for Higgs boson mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
@@ -50,7 +50,7 @@ sns.histplot(data, bins=30, kde=True, stat='probability')
 plt.xlabel('Higgs Boson mass')
 plt.ylabel('Probability')
 plt.xticks(range(-3,4,1))
-plt.title("Standardised Distribution of f Higgs boson masses")
+plt.title("Standardised Distribution of Higgs boson masses")
 plt.show()
 
 """**What percentage of Higgs boson candidates have a mass less than 133 GeV?**
@@ -111,7 +111,7 @@ diff = p2-p1
 
 print('Percentage of the Higgs boson candidates that have  mH<120 GeV:', round(p1*100,2))
 print('Percentage of the Higgs boson candidates that have  mH<130 GeV:', round(p2*100,2))
-print('Percentage of the Higgs boson candidates that have  120<mH<125 GeV:', round(diff*100,2))
+print('Percentage of the Higgs boson candidates that have  120<mH<130 GeV:', round(diff*100,2))
 
 """**What is the mass of a Higgs Boson who has a mass higher than 80% of all the candidates?**
 Ans: Here, we need to calculate the z-score such that norm.cdf(z) = 0.8
@@ -136,7 +136,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Generating normally distributed data for height of men
+#Generating normally distributed data for Higgs boson mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
@@ -157,7 +157,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Generating normally distributed data for height of men
+#Generating normally distributed data for Higgs boson mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 data = (data - mu)/sigma
