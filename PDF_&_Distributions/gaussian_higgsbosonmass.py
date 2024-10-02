@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-#Generating normally distributed data for Higgs boson mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
@@ -30,7 +29,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-#Generating normally distributed data for Higgs boson mass
+#Generating normally distributed data for Higgs mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
@@ -61,6 +60,32 @@ Step1: Find z-score, which is the answer to ‘133 is how many standard deviatio
 Step 2: Use Z-table to find the probability or Use norm.cdf() from scipy.stats in python to find the % area under the curve up until the calculated z-score.
 """
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+#Generating normally distributed data for Higgs mass
+mu, sigma = 125, 5
+data = np.random.normal(mu, sigma, 10000)
+
+#data = (data - mu)/sigma
+# Create a range of values
+x = np.linspace(min(data), max(data), 1000)
+
+# Calculate the CDF
+#cdf = norm.cdf(x, mu, sigma)
+
+p= norm.cdf(x, mu, sigma)
+
+#Plotting the CDF
+plt.plot(x, p, color='blue', linewidth=2, markersize=2)
+plt.hlines(0.5, min(data), max(data),linestyle='dotted', color='red')
+plt.vlines(125, 0, 1,linestyle='dotted', color='red')
+plt.xlabel('Higgs Boson mass')
+plt.ylabel('Probability')
+plt.title("Cumulative distribution funcion of Higgs boson masses")
+plt.show()
+
 from scipy.stats import norm
 
 mu = 125
@@ -69,7 +94,8 @@ sigma = 5
 #Find the z-score
 z = (133-mu)/sigma
 
-#Find the probability (area under the curve until 183 cm)
+
+#Find the probability (area under the curve untin 133 GeV)
 p = norm.cdf(z)
 
 print('Percentage of the Higgs boson candidates that have a mass less than 133 GeV:', round(p*100,2))
@@ -91,9 +117,12 @@ z = (133-mu)/sigma
 #Find the probability (1 - area under the curve until 133 GeV)
 p = 1 - norm.cdf(z)
 
+#Finding the z-score for every value in the data
+data = (data - mu)/sigma
+
 print('Percentage of the Higgs boson candidates that have a mass higher than 133 GeV:', round(p*100,2))
 
-"""What percentage of Higgs boson candidates have 120 < mH <135 GeV?
+"""**What percentage of Higgs boson candidates have 120 < mH <135 GeV?**
 Step1: Find z-score for 120 and 130 GeV
 
 Step 2: Use norm.cdf() from scipy.stats in python to find the % area under the curve up until the calculated z-score.
@@ -112,7 +141,7 @@ diff = p2-p1
 
 print('Percentage of the Higgs boson candidates that have  mH<120 GeV:', round(p1*100,2))
 print('Percentage of the Higgs boson candidates that have  mH<130 GeV:', round(p2*100,2))
-print('Percentage of the Higgs boson candidates that have  120<mH<130 GeV:', round(diff*100,2))
+print('Percentage of the Higgs boson candidates that have  120<mH<125 GeV:', round(diff*100,2))
 
 """**What is the mass of a Higgs Boson who has a mass higher than 80% of all the candidates?**
 Ans: Here, we need to calculate the z-score such that norm.cdf(z) = 0.8
@@ -137,7 +166,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Generating normally distributed data for Higgs boson mass
+#Generating normally distributed data for higgs mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 
@@ -158,7 +187,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Generating normally distributed data for Higgs boson mass
+#Generating normally distributed data for Higgs mass
 mu, sigma = 125, 5
 data = np.random.normal(mu, sigma, 10000)
 data = (data - mu)/sigma
