@@ -1,7 +1,7 @@
 ## Open powershell
 
-    wsl —list —online
-    wsl —install -b <ubuntu-ver>
+    wsl -—list -—online
+    wsl -—install -b <ubuntu-ver>
 
 ## Restart unix shell
 
