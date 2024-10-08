@@ -38,3 +38,7 @@ Conda install -c conda-forge pandas
 Conda install -c conda-forge root
 Conda install -c conda-forge matplotlib
 Conda install -c conda-forge scipy
+
+## Install ipykernel
+    conda install ipykernel
+    python -m ipykernel install --user --name= ENVIRONMENT_NAME
