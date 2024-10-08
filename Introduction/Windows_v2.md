@@ -14,6 +14,8 @@
 
    source Miniconda3-latest-Linux-x86_64.sh
 
+## sometimes it helps to restart your computer to activate all the installations
+
 ## Two options:
 Create environment from yml file
 WARNING: change yml file last line to match your miniconda3 path!!!
