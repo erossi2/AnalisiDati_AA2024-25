@@ -1,6 +1,8 @@
 ## Open powershell
 
     wsl -—list -—online
+## see available software version and choose the one you like:
+    
     wsl -—install -b <ubuntu-ver>
 
 ## Restart unix shell
