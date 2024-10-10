@@ -33,7 +33,7 @@ def gaussian_error_propagation(f, vars):
 
 r, h, sigma_r, sigma_h = symbols('r, h, sigma_r, sigma_h', positive=True)
 V = pi * r**2 * h # volume of a cylinder
-# error
+# error on V
 sigma_V = gaussian_error_propagation(V, [(r, sigma_r), (h, sigma_h)])
 display(Latex(f"$V = {latex(V)}, \, \sigma_V = {latex(sigma_V)}$"))
 
