@@ -1,0 +1,1 @@
+print("Hello world! \nThis is a python executable file.")
